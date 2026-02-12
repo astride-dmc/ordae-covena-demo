@@ -22,9 +22,9 @@
         <div class="quiz-box">
             <div class="quiz-progress">
                 <div class="progress-bar">
-                    <div class="progress-fill" id="progress-fill" style="width: 20%"></div>
+                    <div class="progress-fill" id="progress-fill" style="width: 16.67%"></div>
                 </div>
-                <p class="progress-text">Step <span id="current-step">1</span> of 5</p>
+                <p class="progress-text">Step <span id="current-step">1</span> of 6</p>
             </div>
 
             <form id="quiz-form">
@@ -34,8 +34,8 @@
                         <h2>What type of beauty product are you looking for?</h2>
                         <div class="quiz-options">
                             <label class="quiz-option">
-                                <input type="radio" name="category" value="Wigs" required>
-                                <span>🎀 Wigs</span>
+                                <input type="radio" name="category" value="Hair" required>
+                                <span>💇‍♀️ Hair</span>
                             </label>
                             <label class="quiz-option">
                                 <input type="radio" name="category" value="Lashes" required>
@@ -49,8 +49,29 @@
                     </div>
                 </div>
 
-                <!-- Step 2 -->
-                <div class="quiz-step" data-step="2">
+                <!-- Step 2 - Hair Sub-type (conditional) -->
+                <div class="quiz-step" data-step="2" id="hair-subtype-step">
+                    <div class="quiz-question">
+                        <h2>Which hair product are you shopping for?</h2>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="hair-subtype" value="Wigs" required>
+                                <span>🎀 Wigs</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="hair-subtype" value="Bundles" required>
+                                <span>💫 Bundles / Extensions</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="hair-subtype" value="Closures" required>
+                                <span>✨ Closures / Frontals</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 - Budget -->
+                <div class="quiz-step" data-step="3">
                     <div class="quiz-question">
                         <h2>What's your budget range?</h2>
                         <div class="quiz-options">
@@ -74,8 +95,8 @@
                     </div>
                 </div>
 
-                <!-- Step 3 -->
-                <div class="quiz-step" data-step="3">
+                <!-- Step 4 - Priorities -->
+                <div class="quiz-step" data-step="4">
                     <div class="quiz-question">
                         <h2>What matters most to you? (Select all that apply)</h2>
                         <div class="quiz-options">
@@ -97,14 +118,14 @@
                             </label>
                             <label class="quiz-option">
                                 <input type="checkbox" name="priorities" value="inclusive-range">
-                                <span>🌈 Inclusive Range</span>
+                                <span>Inclusive Range</span>
                             </label>
                         </div>
                     </div>
                 </div>
 
-                <!-- Step 4 -->
-                <div class="quiz-step" data-step="4">
+                <!-- Step 5 - Experience -->
+                <div class="quiz-step" data-step="5">
                     <div class="quiz-question">
                         <h2>How experienced are you with this product type?</h2>
                         <div class="quiz-options">
@@ -124,8 +145,8 @@
                     </div>
                 </div>
 
-                <!-- Step 5 -->
-                <div class="quiz-step" data-step="5">
+                <!-- Step 6 - Shipping -->
+                <div class="quiz-step" data-step="6">
                     <div class="quiz-question">
                         <h2>How quickly do you need your order?</h2>
                         <div class="quiz-options">
