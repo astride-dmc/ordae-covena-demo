@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Signup - ORDAE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ORDAE</a>
+            <div class="nav-links">
+                <a href="marketplace.html">Marketplace</a>
+                <a href="trust-framework.html">COVENA Trust</a>
+                <a href="brand-signup.html" class="nav-cta">For Brands</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="signup-header">
+        <div class="container">
+            <h1>Join ORDAE</h1>
+            <p>Get COVENA verified and connect with conscious consumers who value transparency</p>
+        </div>
+    </section>
+
+    <section class="signup-content">
+        <div class="container">
+            <div class="signup-benefits">
+                <h2 style="text-align: center; font-size: 36px; margin-bottom: 48px; color: var(--cream);">Why Join ORDAE?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🎯</div>
+                        <div class="benefit-text">
+                            <h3>Targeted Audience</h3>
+                            <p>Reach consumers who actively seek transparent, ethical brands and are willing to pay premium prices.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🏆</div>
+                        <div class="benefit-text">
+                            <h3>Competitive Advantage</h3>
+                            <p>Stand out with COVENA certification that proves your commitment to transparency and ethics.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">📈</div>
+                        <div class="benefit-text">
+                            <h3>Increased Trust</h3>
+                            <p>Third-party verification builds customer confidence and increases conversion rates.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💬</div>
+                        <div class="benefit-text">
+                            <h3>Authentic Reviews</h3>
+                            <p>Our verified review system ensures genuine feedback that builds real credibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="signup-form">
+                <h2 style="text-align: center; margin-bottom: 32px; color: var(--cream);">Start Your Application</h2>
+                <form id="brand-signup-form">
+                    <div class="form-group">
+                        <label for="brand-name">Brand Name *</label>
+                        <input type="text" id="brand-name" name="brand-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Product Category *</label>
+                        <select id="category" name="category" required>
+                            <option value="">Select a category</option>
+                            <option value="wigs">Wigs & Hairpieces</option>
+                            <option value="lashes">Lashes & Extensions</option>
+                            <option value="makeup">Makeup & Cosmetics</option>
+                            <option value="skincare">Skincare</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="website">Brand Website *</label>
+                        <input type="url" id="website" name="website" placeholder="https://" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-name">Contact Name *</label>
+                        <input type="text" id="contact-name" name="contact-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sourcing">Tell us about your sourcing practices *</label>
+                        <textarea id="sourcing" name="sourcing" placeholder="Describe where you source your materials and your commitment to transparency..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="certifications">Current Certifications</label>
+                        <textarea id="certifications" name="certifications" placeholder="List any certifications you currently hold (organic, fair trade, cruelty-free, etc.)"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="verification-level">Desired COVENA Verification Level *</label>
+                        <select id="verification-level" name="verification-level" required>
+                            <option value="">Select a level</option>
+                            <option value="silver">Silver - Basic verification</option>
+                            <option value="gold">Gold - Enhanced verification</option>
+                            <option value="platinum">Platinum - Highest standard</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" placeholder="Tell us anything else you'd like us to know about your brand..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; font-size: 18px;">Submit Application</button>
+                </form>
+
+                <p style="text-align: center; margin-top: 24px; font-size: 14px; color: var(--gray-light);">
+                    * Required fields. Our team will review your application and contact you within 5-7 business days.
+                </p>
+            </div>
+
+            <div class="trust-section" style="margin-top: 80px;">
+                <h2 style="text-align: center; font-size: 36px; margin-bottom: 32px; color: var(--cream);">The Verification Journey</h2>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Apply</h3>
+                        <p>Submit your application and initial documentation</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Review</h3>
+                        <p>Our team reviews your materials and conducts initial verification</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Audit</h3>
+                        <p>Independent auditors verify your supply chain and practices</p>
+                    </div>
+                    <div class="step-arrow">→</div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Launch</h3>
+                        <p>Get certified and start selling on ORDAE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3 class="logo">ORDAE</h3>
+                <p>Authentic beauty, verified trust.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="marketplace.html">Browse Marketplace</a></li>
+                    <li><a href="quiz.html">Take the Quiz</a></li>
+                    <li><a href="trust-framework.html">COVENA Trust</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Brands</h4>
+                <ul>
+                    <li><a href="brand-signup.html">Join ORDAE</a></li>
+                    <li><a href="trust-framework.html">Verification Process</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ORDAE. Powered by COVENA Trust Framework.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Handle form submission
+        document.getElementById('brand-signup-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your interest in joining ORDAE! Our team will review your application and contact you within 5-7 business days.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

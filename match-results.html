@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Matches - ORDAE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ORDAE</a>
+            <div class="nav-links">
+                <a href="marketplace.html">Marketplace</a>
+                <a href="trust-framework.html">COVENA Trust</a>
+                <a href="brand-signup.html" class="nav-cta">For Brands</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="results-header">
+        <div class="container">
+            <h1>Your Perfect Matches</h1>
+            <p>Based on your preferences, here are the brands we recommend for you</p>
+        </div>
+    </section>
+
+    <section class="results-content">
+        <div class="container">
+            <div id="match-results-container">
+                <!-- Match results will be dynamically loaded here -->
+            </div>
+
+            <div style="text-align: center; margin-top: 60px;">
+                <a href="marketplace.html" class="btn btn-secondary">Browse All Brands</a>
+                <a href="quiz.html" class="btn btn-outline" style="margin-left: 16px;">Retake Quiz</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3 class="logo">ORDAE</h3>
+                <p>Authentic beauty, verified trust.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="marketplace.html">Browse Marketplace</a></li>
+                    <li><a href="quiz.html">Take the Quiz</a></li>
+                    <li><a href="trust-framework.html">COVENA Trust</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Brands</h4>
+                <ul>
+                    <li><a href="brand-signup.html">Join ORDAE</a></li>
+                    <li><a href="trust-framework.html">Verification Process</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ORDAE. Powered by COVENA Trust Framework.</p>
+        </div>
+    </footer>
+
+    <script src="brands-data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Load match results
+        if (typeof loadMatchResults === 'function') {
+            loadMatchResults();
+        }
+    </script>
+</body>
+</html>

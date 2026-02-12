@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Profile - ORDAE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ORDAE</a>
+            <div class="nav-links">
+                <a href="marketplace.html">Marketplace</a>
+                <a href="trust-framework.html">COVENA Trust</a>
+                <a href="brand-signup.html" class="nav-cta">For Brands</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="brand-profile-header">
+        <div class="container">
+            <div class="brand-profile-intro">
+                <div>
+                    <h1 class="brand-title" id="brand-name">Brand Name</h1>
+                    <p class="brand-category" id="brand-category">Category</p>
+                    <p class="brand-tagline" id="brand-tagline">Brand tagline</p>
+                    <div style="margin-top: 32px;">
+                        <a href="#" class="btn btn-primary btn-large">Shop Now</a>
+                    </div>
+                </div>
+                <div class="brand-covena-badges" id="covena-badges">
+                    <!-- COVENA badges will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brand-profile-content">
+        <div class="container">
+            <!-- Mission Section -->
+            <div class="profile-section">
+                <h2>Our Mission</h2>
+                <p id="brand-mission"></p>
+            </div>
+
+            <!-- Sourcing Section -->
+            <div class="profile-section">
+                <h2>Sourcing & Transparency</h2>
+                <p id="sourcing-summary"></p>
+                <ul id="sourcing-details" style="margin-top: 20px; padding-left: 24px;">
+                    <!-- Sourcing details will be loaded here -->
+                </ul>
+            </div>
+
+            <!-- Process Section -->
+            <div class="profile-section">
+                <h2>Our Process</h2>
+                <div class="process-steps" id="process-steps">
+                    <!-- Process steps will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Best Sellers Section -->
+            <div class="profile-section">
+                <h2>Best Sellers</h2>
+                <div class="products-grid" id="best-sellers">
+                    <!-- Best sellers will be loaded here -->
+                </div>
+            </div>
+
+            <!-- Reviews Section -->
+            <div class="profile-section">
+                <h2>Customer Reviews</h2>
+                <div class="reviews" id="reviews-container">
+                    <!-- Reviews will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h3 class="logo">ORDAE</h3>
+                <p>Authentic beauty, verified trust.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="marketplace.html">Browse Marketplace</a></li>
+                    <li><a href="quiz.html">Take the Quiz</a></li>
+                    <li><a href="trust-framework.html">COVENA Trust</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>For Brands</h4>
+                <ul>
+                    <li><a href="brand-signup.html">Join ORDAE</a></li>
+                    <li><a href="trust-framework.html">Verification Process</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ORDAE. Powered by COVENA Trust Framework.</p>
+        </div>
+    </footer>
+
+    <script src="brands-data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Load brand profile
+        if (typeof loadBrandProfile === 'function') {
+            loadBrandProfile();
+        }
+    </script>
+</body>
+</html>
